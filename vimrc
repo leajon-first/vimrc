@@ -37,6 +37,9 @@ map <silent> <leader>ss :source ~/.vimrc<cr>
 "Fast editing of .vimrc
 map <silent> <leader>ee :e ~/.vimrc<cr>
 
+"Delete 19line from head
+map <silent> <leader>rr :1,19d<cr>
+
 "When .vimrc is edited, reload it
 autocmd! bufwritepost .vimrc source ~/.vimrc
 

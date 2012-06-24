@@ -132,7 +132,7 @@ set wrap
 "=> ctags sets
 """""""""""""""""""""""""""""""""""""""""""""""""
 "Fast toggle the Tlist window
-map <silent> <F9> :TlistToggle<cr>
+map <silent> <leader>tt :TlistToggle<cr>
 
 "Only show the tags of current file
 let Tlist_Show_One_File = 1

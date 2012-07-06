@@ -1,13 +1,13 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""
-"Leajon's vim configuration, being improved...
-"most of this copy from :
-"		amix.dk/vim/vimrc.html
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Vim configuration, being improved...
+"First version was copied from:amix.dk/vim/vimrc.html
+"E-mail:leajon.first@gmail.com
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "=> General sets
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Set how many lines of history VIM has to remember
 set history=300
 
@@ -32,12 +32,19 @@ map <silent><leader>s :wq<cr>
 map <silent><leader>q :q!<cr>
 
 "Fast reloading of the .vimrc
-map <silent> <leader>ss :source ~/.vimrc<cr>
+map <silent> <leader>ll :source ~/.vimrc<cr>
+"Beaware, alpha 'll' not digit '11'
 
 "Fast editing of .vimrc
 map <silent> <leader>ee :e ~/.vimrc<cr>
 
-"Delete 19lines from head
+"Fast comment
+map <silent> <leader>cc :s/^/\/\//<cr>:nohl<cr>
+
+"Fast uncomment
+map <silent> <leader>oo :s/^\/\///<cr>
+
+"Fast delete 19lines from head , for c.vim only
 map <silent> <leader>rr :1,19d<cr>
 
 "When .vimrc is edited, reload it
@@ -48,9 +55,9 @@ set noerrorbells
 set novisualbell
 set t_vb=
 
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "=> VIM user interface
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Always show current position
 set ruler
 
@@ -93,9 +100,9 @@ set backspace=eol,start,indent
 set whichwrap +=<,>,h,l
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "=> Colors and Fonts
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Enable syntax highlight
 syntax enable
 
@@ -104,9 +111,9 @@ syntax enable
 	set background=dark
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "=>Text, tab and indent related
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Auto expand Tab to Spaces
 "set expandtab
 
@@ -128,9 +135,9 @@ set si
 set wrap
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "=> ctags sets
-"""""""""""""""""""""""""""""""""""""""""""""""""
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Fast toggle the Tlist window
 map <silent> <leader>tt :TlistToggle<cr>
 

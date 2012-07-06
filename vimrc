@@ -1,7 +1,7 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Vim configuration, being improved...
-"First version was copied from:amix.dk/vim/vimrc.html
 "E-mail:leajon.first@gmail.com
+"First version was copied from:amix.dk/vim/vimrc.html
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 

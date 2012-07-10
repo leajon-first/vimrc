@@ -150,4 +150,5 @@ let Tlist_Exit_OnlyWindow = 1
 "Show the taglist window in the right side of screen
 let Tlist_Use_Right_Window = 1 
 
-
+"If not found tags in current directory, go to parent directory and find it.
+set tags=tags;/

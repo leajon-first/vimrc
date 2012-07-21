@@ -124,7 +124,7 @@ set shiftwidth=3
 set tabstop=3
 set smarttab
 
-"Let Tab auto expand to Space
+"Let Table auto expand to three Space
 set expandtab
 
 set lbr

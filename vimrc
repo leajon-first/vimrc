@@ -124,7 +124,7 @@ set shiftwidth=3
 set tabstop=3
 set smarttab
 
-"Let Table auto expand to three Space
+"Let Tab auto expand to Space
 set expandtab
 
 set lbr
@@ -142,7 +142,7 @@ set wrap
 "=> ctags sets
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Fast toggle the Tlist window
-map <silent> <leader>tt :TlistToggle<cr>
+map <silent> <leader>tl :TlistToggle<cr>
 
 "Only show the tags of current file
 let Tlist_Show_One_File = 1
@@ -173,7 +173,7 @@ if has("cscope")
   if filereadable("cscope.out")
       cs add cscope.out
   endif
-  "add cscope database;
+  cs add /root/SVN/LBX/trunk/main/cscope.out
   set csverb
 endif
 
@@ -185,3 +185,10 @@ nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>
 nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
 nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
 nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" NERDTree setting
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Fast toggle the Tlist window
+map <silent> <leader>nt :NERDTreeToggle<cr>

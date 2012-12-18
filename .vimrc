@@ -106,6 +106,9 @@ set whichwrap +=<,>,h,l
 "Enable syntax highlight
 syntax enable
 
+"Set 256 color
+set t_Co=256
+
 "Set the color scheme
 colorscheme desert
 set background=dark

@@ -15,6 +15,10 @@ set history=300
 filetype plugin on
 filetype indent on
 
+"When buffer write to disk
+"Auto remove blank characters at the end of line
+autocmd BufWrite * execute ":%s/\\s\\s*$//g"
+
 "Set to auto read when a file is changed from the outside
 set autoread
 
